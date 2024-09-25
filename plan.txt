@@ -1,0 +1,1 @@
+Fakultet, Group, Kafedra, Student, Teacher, Subject,

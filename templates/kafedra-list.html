@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kafedra List</title>
+</head>
+<body>
+<h1>Kafedra List</h1>
+<ul>
+    {% for kafedra in kafedras %}
+        <li>{{kafedra.name}}</li>
+    {%endfor%}
+</ul>
+</body>
+</html>

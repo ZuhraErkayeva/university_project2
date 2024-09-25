@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty List</title>
+</head>
+<body>
+<h1>Faculty List</h1>
+<ul>
+    {% for faculty in faculties %}
+        <li><a href="{% url 'faculty_detail' pk=faculty.pk %}">{{ faculty.name }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
