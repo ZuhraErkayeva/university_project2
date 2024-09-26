@@ -8,7 +8,8 @@
 <h1>Kafedra List</h1>
 <ul>
     {% for kafedra in kafedras %}
-        <li>{{kafedra.name}}</li>
+        <li><a href="{% url 'kafedra_detail' pk=kafedra.pk %}">{{ kafedra.name }}</a></li>
+        <li>{{kafedra.name}} {{kafedra.faculty}}</li>
     {%endfor%}
 </ul>
 </body>

@@ -59,7 +59,7 @@ def teacher_detail(request,pk):
 def kafedra_list(request):
     kafedras = Kafedra.objects.all()
     ctx = {'kafedras': kafedras}
-    return render(request, 'teacher-list.html', ctx)
+    return render(request, 'kafedra-list.html', ctx)
 def kafedra_detail(request,pk):
     kafedra = get_object_or_404(Kafedra,pk=pk)
     ctx = {'kafedra': kafedra}

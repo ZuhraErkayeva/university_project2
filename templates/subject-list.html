@@ -8,6 +8,7 @@
 <h1>Subject List</h1>
 <ul>
     {% for subject in subjects %}
+        <li><a href="{% url 'subject_detail' pk=subject.pk %}">{{ subject.name }}</a></li>
         <li>{{subject.name}}</li>
     {% endfor %}
 </ul>

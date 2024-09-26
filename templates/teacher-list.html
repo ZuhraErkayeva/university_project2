@@ -8,8 +8,9 @@
 <h1>Teacher List</h1>
 <ul>
     {% for teacher in teachers %}
-        <li>{{teacher.first_name}}</li>
-        <li>{{teacher.last_name}}</li>
+        <li><a href="{% url 'teacher_detail' pk=teacher.pk %}">{{ teacher.first_name }}</a></li>
+        <li>{{teacher.first_name}} {{teacher.last_name}}</li>
+        <p>{{teacher.bio}} {{teacher.subject}} {{teacher.created_at}} {{teacher.updated_at}}</p>
     {%endfor%}
 </ul>
 </body>
